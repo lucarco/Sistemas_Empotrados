@@ -1,0 +1,32 @@
+/**
+ * Author: Olga Posada Iglesias
+ * */
+
+#ifndef MOVIMIENTOSLEDS_H
+#define MOVIMIENTOSLEDS_H
+
+#include "led_rgb.h"
+
+#define RED 0
+#define GREEN 1
+#define BLUE 2
+#define LED_0 XPAR_LED_RGB_0_BASEADDR
+
+
+void arcoiris(Xuint32 LED){
+	LED_RGB_mWriteSlaveReg0(LED,0,0);
+	LED_RGB_mWriteSlaveReg1(LED,0,255);
+	LED_RGB_mWriteSlaveReg2(LED,0,255);
+
+	   fadeUp(LED,RED,GREEN);
+	   fadeDown(LED,GREEN,RED);
+	   fadeUp(LED,GREEN,BLUE);
+	   fadeDown(LED,BLUE,GREEN);
+	   fadeUp(LED,BLUE,RED);
+	   fadeDown(LED,RED,BLUE);
+
+}
+
+
+
+#endif /** MOVIMIENTOSLEDS_H */

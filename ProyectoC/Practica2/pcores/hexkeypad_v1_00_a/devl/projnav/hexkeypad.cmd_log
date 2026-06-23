@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/hlocal/SE/Proyecto/Practica2/pcores/hexkeypad_v1_00_a/devl/projnav/hexkeypad.xst" -ofn "C:/hlocal/SE/Proyecto/Practica2/pcores/hexkeypad_v1_00_a/devl/projnav/hexkeypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000l-ft256-4 hexkeypad.ngc hexkeypad.ngd  
+map -intstyle ise -p xc3s1000l-ft256-4 -cm area -ir off -pr off -c 100 -o hexkeypad_map.ncd hexkeypad.ngd hexkeypad.pcf 

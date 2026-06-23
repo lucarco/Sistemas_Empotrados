@@ -1,0 +1,26 @@
+V3 19
+FL U:/hlocal/Gala/P1/cerrojo.vhd 2023/09/25.19:13:40 P.15xf
+EN work/cerrojo 1695662027 FL U:/hlocal/Gala/P1/cerrojo.vhd PB ieee/std_logic_1164 1335251622
+AR work/cerrojo/Behavioral 1695662028 \
+      FL U:/hlocal/Gala/P1/cerrojo.vhd EN work/cerrojo 1695662027 CP registro
+FL U:/hlocal/Gala/P1/conv_7seg.vhd 2023/09/25.19:06:08 P.15xf
+EN work/conv_7seg 1695662029 FL U:/hlocal/Gala/P1/conv_7seg.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/conv_7seg/Behavioral 1695662030 \
+      FL U:/hlocal/Gala/P1/conv_7seg.vhd EN work/conv_7seg 1695662029
+FL U:/hlocal/Gala/P1/debouncer.vhd 2023/09/25.18:28:47 P.15xf
+EN work/debouncer 1695662025 FL U:/hlocal/Gala/P1/debouncer.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/debouncer/debouncerArch 1695662026 \
+      FL U:/hlocal/Gala/P1/debouncer.vhd EN work/debouncer 1695662025
+FL U:/hlocal/Gala/P1/registro.vhd 2022/10/02.14:09:00 P.15xf
+EN work/registro 1695662023 FL U:/hlocal/Gala/P1/registro.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/registro/Behavioral 1695662024 \
+      FL U:/hlocal/Gala/P1/registro.vhd EN work/registro 1695662023
+FL U:/hlocal/Gala/P1/sintesis_cerrojo.vhd 2023/09/25.19:05:17 P.15xf
+EN work/sintesis_cerrojo 1695662031 FL U:/hlocal/Gala/P1/sintesis_cerrojo.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/sintesis_cerrojo/cerrojoArch 1695662032 \
+      FL U:/hlocal/Gala/P1/sintesis_cerrojo.vhd EN work/sintesis_cerrojo 1695662031 \
+      CP debouncer CP cerrojo CP conv_7seg

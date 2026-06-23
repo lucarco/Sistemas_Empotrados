@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/devl/projnav/infrarrojos.xst" -ofn "C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/devl/projnav/infrarrojos.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim infrarrojos.ngc infrarrojos_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000l-ft256-4 infrarrojos.ngc infrarrojos.ngd  
+map -intstyle ise -p xc3s1000l-ft256-4 -cm area -ir off -pr off -c 100 -o infrarrojos_map.ncd infrarrojos.ngd infrarrojos.pcf 
+xst -intstyle ise -ifn "C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/devl/projnav/infrarrojos.xst" -ofn "C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/devl/projnav/infrarrojos.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000l-ft256-4 infrarrojos.ngc infrarrojos.ngd  
+map -intstyle ise -p xc3s1000l-ft256-4 -cm area -ir off -pr off -c 100 -o infrarrojos_map.ncd infrarrojos.ngd infrarrojos.pcf 
+xst -intstyle ise -ifn "C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/devl/projnav/infrarrojos.xst" -ofn "C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/devl/projnav/infrarrojos.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000l-ft256-4 infrarrojos.ngc infrarrojos.ngd  
+map -intstyle ise -p xc3s1000l-ft256-4 -cm area -ir off -pr off -c 100 -o infrarrojos_map.ncd infrarrojos.ngd infrarrojos.pcf 

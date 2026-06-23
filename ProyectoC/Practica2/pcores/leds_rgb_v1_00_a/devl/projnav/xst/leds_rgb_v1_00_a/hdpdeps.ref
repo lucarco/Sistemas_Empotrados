@@ -1,0 +1,24 @@
+V3 11
+FL C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/leds_rgb.vhd 2021/02/25.04:09:06 P.15xf
+EN leds_rgb_v1_00_a/leds_rgb 1614222573 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/leds_rgb.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1614222552 \
+      PB proc_common_v3_00_a/ipif_pkg 1614222564 LB plbv46_slave_single_v1_01_a \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1614222569 \
+      LB leds_rgb_v1_00_a EN leds_rgb_v1_00_a/user_logic 1614222571
+AR leds_rgb_v1_00_a/leds_rgb/IMP 1614222574 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/leds_rgb.vhd \
+      EN leds_rgb_v1_00_a/leds_rgb 1614222573 \
+      CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
+      CP leds_rgb_v1_00_a/user_logic
+FL C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/user_logic.vhd 2020/08/24.15:33:30 P.15xf
+EN leds_rgb_v1_00_a/user_logic 1614222571 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1614222552
+AR leds_rgb_v1_00_a/user_logic/IMP 1614222572 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN leds_rgb_v1_00_a/user_logic 1614222571

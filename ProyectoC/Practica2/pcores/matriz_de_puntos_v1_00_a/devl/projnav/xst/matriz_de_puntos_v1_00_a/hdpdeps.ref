@@ -1,0 +1,25 @@
+V3 14
+FL C:/hlocal/SE/Proyecto/Practica2/pcores/matriz_de_puntos_v1_00_a/hdl/vhdl/matriz_de_puntos.vhd 2021/02/25.03:35:34 P.15xf
+EN matriz_de_puntos_v1_00_a/matriz_de_puntos 1614220599 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/matriz_de_puntos_v1_00_a/hdl/vhdl/matriz_de_puntos.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1614220553 \
+      PB proc_common_v3_00_a/ipif_pkg 1614220578 LB wrpfifo_v5_01_a \
+      EN wrpfifo_v5_01_a/wrpfifo_top 1614220593 LB plbv46_slave_single_v1_01_a \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1614220595 \
+      LB matriz_de_puntos_v1_00_a EN matriz_de_puntos_v1_00_a/user_logic 1614220597
+AR matriz_de_puntos_v1_00_a/matriz_de_puntos/IMP 1614220600 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/matriz_de_puntos_v1_00_a/hdl/vhdl/matriz_de_puntos.vhd \
+      EN matriz_de_puntos_v1_00_a/matriz_de_puntos 1614220599 \
+      CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
+      CP wrpfifo_v5_01_a/wrpfifo_top CP matriz_de_puntos_v1_00_a/user_logic
+FL C:/hlocal/SE/Proyecto/Practica2/pcores/matriz_de_puntos_v1_00_a/hdl/vhdl/user_logic.vhd 2021/02/25.02:57:47 P.15xf
+EN matriz_de_puntos_v1_00_a/user_logic 1614220597 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/matriz_de_puntos_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1614220553
+AR matriz_de_puntos_v1_00_a/user_logic/IMP 1614220598 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/matriz_de_puntos_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN matriz_de_puntos_v1_00_a/user_logic 1614220597 CP bannerDesp

@@ -1,0 +1,40 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/hlocal/SE/Proyecto/Practica2/pcores/hexkeypad_v1_00_a/devl/projnav/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/hlocal/SE/Proyecto/Practica2/pcores/hexkeypad_v1_00_a/devl/projnav/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file "C:/hlocal/SE/Proyecto/Practica2/pcores/hexkeypad_v1_00_a/hdl/vhdl/teclaDetect.vhd" in Library work.
+Architecture behavioral of Entity tecladetect is up to date.
+Compiling vhdl file "C:/hlocal/SE/Proyecto/Practica2/pcores/hexkeypad_v1_00_a/hdl/vhdl/user_logic.vhd" in Library hexkeypad_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <IMP>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> 
+
+Total memory usage is 4472180 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

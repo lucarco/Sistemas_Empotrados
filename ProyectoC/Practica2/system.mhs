@@ -1,0 +1,132 @@
+
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT Clk_pin = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
+ PORT Rst_pin = plb_v46_0_SYS_Rst, DIR = I, SIGIS = RST
+ PORT led = leds_GPIO_IO, DIR = IO, VEC = [0:7]
+ PORT switch = switches_GPIO_IO, DIR = IO, VEC = [0:7]
+ PORT RX_pin = xps_uartlite_0_RX, DIR = I
+ PORT TX_pin = xps_uartlite_0_TX, DIR = O
+ PORT plb_v46_0_SYS_Rst_pin = net_plb_v46_0_SYS_Rst_pin, DIR = I, SIGIS = RST
+ PORT infrarrojos_0_code_infraredTop_pin = infrarrojos_0_code_infraredTop, DIR = O
+ PORT hexkeypad_0_S_pin = hexkeypad_0_S, DIR = O, VEC = [3:0]
+ PORT hexkeypad_0_R_pin = hexkeypad_0_R, DIR = I, VEC = [3:0]
+ PORT matriz_de_puntos_0_col_serial_out_pin = matriz_de_puntos_0_col_serial_out, DIR = O
+ PORT matriz_de_puntos_0_col_clk_pin = matriz_de_puntos_0_col_clk, DIR = O
+ PORT matriz_de_puntos_0_row_serial_out_pin = matriz_de_puntos_0_row_serial_out, DIR = O
+ PORT matriz_de_puntos_0_row_clk_pin = matriz_de_puntos_0_row_clk, DIR = O
+ PORT matriz_de_puntos_0_reset_out_pin = matriz_de_puntos_0_reset_out, DIR = O
+ PORT matriz_de_puntos_0_reset2_out_pin = matriz_de_puntos_0_reset2_out, DIR = O
+ PORT leds_rgb_0_red_pin = leds_rgb_0_red, DIR = O
+ PORT leds_rgb_0_green_pin = leds_rgb_0_green, DIR = O
+ PORT leds_rgb_0_blue_pin = leds_rgb_0_blue, DIR = O
+
+
+BEGIN xps_uartlite
+ PARAMETER INSTANCE = xps_uartlite_0
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_SPLB_CLK_FREQ_HZ = 50000000
+ PARAMETER C_BASEADDR = 0x00028000
+ PARAMETER C_HIGHADDR = 0x0002ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT RX = xps_uartlite_0_RX
+ PORT TX = xps_uartlite_0_TX
+END
+
+BEGIN xps_bram_if_cntlr
+ PARAMETER INSTANCE = xps_bram_if_cntlr_0
+ PARAMETER HW_VER = 1.00.b
+ PARAMETER C_SPLB_NATIVE_DWIDTH = 32
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00007fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = switches
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 8
+ PARAMETER C_BASEADDR = 0x00018000
+ PARAMETER C_HIGHADDR = 0x0001ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT GPIO_IO = switches_GPIO_IO
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = plb_v46_0
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = plb_v46_0_PLB_Clk
+ PORT SYS_Rst = net_plb_v46_0_SYS_Rst_pin
+END
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER HW_VER = 8.30.a
+ BUS_INTERFACE DPLB = plb_v46_0
+ BUS_INTERFACE IPLB = plb_v46_0
+ PORT MB_RESET = plb_v46_0_PLB_Rst
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = leds
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 8
+ PARAMETER C_BASEADDR = 0x00010000
+ PARAMETER C_HIGHADDR = 0x00017fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT GPIO_IO = leds_GPIO_IO
+END
+
+BEGIN infrarrojos
+ PARAMETER INSTANCE = infrarrojos_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x00038000
+ PARAMETER C_HIGHADDR = 0x0003ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT code_infraredTop = infrarrojos_0_code_infraredTop
+END
+
+BEGIN hexkeypad
+ PARAMETER INSTANCE = hexkeypad_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x00008000
+ PARAMETER C_HIGHADDR = 0x0000ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT S = hexkeypad_0_S
+ PORT R = hexkeypad_0_R
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = bram_block_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN matriz_de_puntos
+ PARAMETER INSTANCE = matriz_de_puntos_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xcf800000
+ PARAMETER C_HIGHADDR = 0xcf807fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT col_serial_out = matriz_de_puntos_0_col_serial_out
+ PORT col_clk = matriz_de_puntos_0_col_clk
+ PORT row_serial_out = matriz_de_puntos_0_row_serial_out
+ PORT row_clk = matriz_de_puntos_0_row_clk
+ PORT reset_out = matriz_de_puntos_0_reset_out
+ PORT reset2_out = matriz_de_puntos_0_reset2_out
+END
+
+BEGIN leds_rgb
+ PARAMETER INSTANCE = leds_rgb_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x00020000
+ PARAMETER C_HIGHADDR = 0x00027fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT redTop = leds_rgb_0_red
+ PORT greenTop = leds_rgb_0_green
+ PORT blueTop = leds_rgb_0_blue
+END
+

@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\hlocal\SE\Proyecto\Practica2\pcores\infrarrojos_v1_00_a\devl\synthesis\infrarrojos_xst.prj"
+-top infrarrojos
+-p virtex6
+-ofn "C:\hlocal\SE\Proyecto\Practica2\pcores\infrarrojos_v1_00_a\devl\synthesis\infrarrojos_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib infrarrojos_v1_00_a

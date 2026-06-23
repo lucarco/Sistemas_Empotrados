@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;peripheral_tests_4/src/frases_compuestas.h&apos; to &apos;rellenar.h&apos;" description="Rename resource &apos;frases_compuestas.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/frases_compuestas.h" name="rellenar.h" stamp="1719922217404" updateReferences="true"/>
+</session>

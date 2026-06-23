@@ -1,0 +1,298 @@
+/**
+ * Author: Olga Posada Iglesias
+ * */
+
+#ifndef FRASES_COMPUESTAS_H
+#define FRASES_COMPUESTAS_H
+
+#include "keypad.h"
+#include "caracteres.h"
+#include <time.h>
+#include <stdlib.h>
+
+void normalDelay(){
+	int c;
+	for ( c = 1 ; c <= 1500 ; c++ ){}
+}
+
+void slowDelay(){
+	int c,j;
+
+	for ( c = 1 ; c <= 13500 ; c++ ){
+		for ( j = 1 ; j <= 250 ; j++ ){}
+	}
+
+}
+
+void aSecondDelay(){
+	int c,j;
+
+	for ( c = 1 ; c <= 13500 ; c++ ){
+		for ( j = 1 ; j <= 63 ; j++ ){}
+	}
+}
+
+
+void numeroUno(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_U_DIR(1,dir);
+	write_N_DIR(2,dir);
+	write_0_DIR(3,dir);
+	write_diamante_DIR(4,dir);
+	write_1_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroDos(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_D_DIR(1,dir);
+	write_O_DIR(2,dir);
+	write_S_DIR(3,dir);
+	write_diamante_DIR(4,dir);
+	write_2_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroTres(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_T_DIR(1,dir);
+	write_R_DIR(2,dir);
+	write_E_DIR(3,dir);
+	write_S_DIR(4,dir);
+	write_diamante_DIR(5,dir);
+	write_3_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroCuatro(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_C_DIR(1,dir);
+	write_U_DIR(2,dir);
+	write_A_DIR(3,dir);
+	write_T_DIR(4,dir);
+	write_R_DIR(5,dir);
+	write_O_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+	write_4_DIR(8,dir);
+}
+
+void numeroCinco(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_C_DIR(1,dir);
+	write_I_DIR(2,dir);
+	write_N_DIR(3,dir);
+	write_C_DIR(4,dir);
+	write_O_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_5_DIR(7,dir);
+}
+
+void numeroSeis(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_S_DIR(1,dir);
+	write_E_DIR(2,dir);
+	write_I_DIR(3,dir);
+	write_S_DIR(4,dir);
+	write_diamante_DIR(5,dir);
+	write_6_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroSiete(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_S_DIR(1,dir);
+	write_I_DIR(2,dir);
+	write_E_DIR(3,dir);
+	write_T_DIR(4,dir);
+	write_E_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_7_DIR(7,dir);
+}
+
+void numeroOcho(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_O_DIR(1,dir);
+	write_C_DIR(2,dir);
+	write_H_DIR(3,dir);
+	write_O_DIR(4,dir);
+	write_diamante_DIR(5,dir);
+	write_8_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroNueve(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_N_DIR(1,dir);
+	write_U_DIR(2,dir);
+	write_E_DIR(3,dir);
+	write_V_DIR(4,dir);
+	write_E_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_9_DIR(7,dir);
+}
+
+void numeroArcoiris(Xuint8 dir){
+	write_smile_DIR(0,dir);
+	write_R_DIR(1,dir);
+	write_A_DIR(2,dir);
+	write_I_DIR(3,dir);
+	write_N_DIR(4,dir);
+	write_B_DIR(5,dir);
+	write_O_DIR(6,dir);
+	write_W_DIR(7,dir);
+	write_smile_DIR(8,dir);
+}
+
+void numeroNumeros(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_N_DIR(1,dir);
+	write_U_DIR(2,dir);
+	write_M_DIR(3,dir);
+	write_E_DIR(4,dir);
+	write_R_DIR(5,dir);
+	write_O_DIR(6,dir);
+	write_S_DIR(7,dir);
+	write_diamante_DIR(8,dir);
+}
+
+/*
+void color(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_C_DIR(1,dir);
+	write_O_DIR(2,dir);
+	write_L_DIR(3,dir);
+	write_O_DIR(4,dir);
+	write_R_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+}
+
+void animal(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_A_DIR(1,dir);
+	write_N_DIR(2,dir);
+	write_I_DIR(3,dir);
+	write_M_DIR(4,dir);
+	write_A_DIR(5,dir);
+	write_L_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void cosa(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_C_DIR(2,dir);
+	write_O_DIR(3,dir);
+	write_S_DIR(4,dir);
+	write_A_DIR(5,dir);
+	write_diamante_DIR(7,dir);
+}
+*/
+/*void showRandomQuestion(Xuint8 dir){
+	Xuint32 num = rand()%3;//se pondría hasta el 5 para todos
+	//xil_printf("num: %d\n",num);
+	switch(num) {
+	case 0:
+		ciudad(dir);
+		break;
+	case 1:
+		nombre(dir);
+		break;
+	case 2:
+		fruta(dir);
+		break;
+	/*case 3:
+		color(dir);
+		break;
+	case 4:
+		animal(dir);
+		break;
+	case 5:
+		break;
+	}
+}*/
+
+void startGame(){
+
+	BANNER_inicializa();
+	//write_phrase(inicio,TURN_QUIET);
+	numeroNumeros(TURN_QUIET);
+	/*int i, j;
+
+	for(i = 0; i < 8; i++){
+		for(j = 0; j < 7; j++){
+			BANNER_enviarcondireccion(i,j,inicio[i][j],TURN_QUIET);
+		}
+	}*/
+	/*
+	BANNER_enviarcondireccion(0,0,0x15,TURN_QUIET);
+	BANNER_enviarcondireccion(0,1,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(0,2,0x10,TURN_QUIET);
+	BANNER_enviarcondireccion(0,3,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(0,4,0x10,TURN_QUIET);
+	BANNER_enviarcondireccion(0,5,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(0,6,0x15,TURN_QUIET);
+
+	BANNER_enviarcondireccion(1,0,0x0A,TURN_QUIET);
+	BANNER_enviarcondireccion(1,1,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(1,2,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(1,3,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(1,4,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(1,5,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(1,6,0x0A,TURN_QUIET);
+
+	BANNER_enviarcondireccion(2,0,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(2,1,0x07,TURN_QUIET);
+	BANNER_enviarcondireccion(2,2,0x04,TURN_QUIET);
+	BANNER_enviarcondireccion(2,3,0x07,TURN_QUIET);
+	BANNER_enviarcondireccion(2,4,0x01,TURN_QUIET);
+	BANNER_enviarcondireccion(2,5,0x07,TURN_QUIET);
+	BANNER_enviarcondireccion(2,6,0x00,TURN_QUIET);
+
+	BANNER_enviarcondireccion(3,0,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(3,1,0x0E,TURN_QUIET);
+	BANNER_enviarcondireccion(3,2,0x04,TURN_QUIET);
+	BANNER_enviarcondireccion(3,3,0x04,TURN_QUIET);
+	BANNER_enviarcondireccion(3,4,0x04,TURN_QUIET);
+	BANNER_enviarcondireccion(3,5,0x04,TURN_QUIET);
+	BANNER_enviarcondireccion(3,6,0x00,TURN_QUIET);
+
+	BANNER_enviarcondireccion(4,0,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(4,1,0x1D,TURN_QUIET);
+	BANNER_enviarcondireccion(4,2,0x15,TURN_QUIET);
+	BANNER_enviarcondireccion(4,3,0x15,TURN_QUIET);
+	BANNER_enviarcondireccion(4,4,0x15,TURN_QUIET);
+	BANNER_enviarcondireccion(4,5,0x1D,TURN_QUIET);
+	BANNER_enviarcondireccion(4,6,0x00,TURN_QUIET);
+
+	BANNER_enviarcondireccion(5,0,0x02,TURN_QUIET);
+	BANNER_enviarcondireccion(5,1,0x18,TURN_QUIET);
+	BANNER_enviarcondireccion(5,2,0x08,TURN_QUIET);
+	BANNER_enviarcondireccion(5,3,0x18,TURN_QUIET);
+	BANNER_enviarcondireccion(5,4,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(5,5,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(5,6,0x02,TURN_QUIET);
+
+	BANNER_enviarcondireccion(6,0,0x0A,TURN_QUIET);
+	BANNER_enviarcondireccion(6,1,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(6,2,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(6,3,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(6,4,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(6,5,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(6,6,0x0A,TURN_QUIET);
+
+	BANNER_enviarcondireccion(7,0,0x15,TURN_QUIET);
+	BANNER_enviarcondireccion(7,1,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(7,2,0x01,TURN_QUIET);
+	BANNER_enviarcondireccion(7,3,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(7,4,0x01,TURN_QUIET);
+	BANNER_enviarcondireccion(7,5,0x00,TURN_QUIET);
+	BANNER_enviarcondireccion(7,6,0x15,TURN_QUIET);
+*/
+	//slowDelay();
+	//write_phrase(playerx,TURN_RIGHT);
+	//slowDelay();
+	//BANNER_inicializa();
+}
+
+#endif /** FRASES_COMPUESTAS_H */

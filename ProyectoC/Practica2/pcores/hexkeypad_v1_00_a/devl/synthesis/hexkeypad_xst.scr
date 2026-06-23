@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\hlocal\SE\Proyecto\Practica2\pcores\hexkeypad_v1_00_a\devl\synthesis\hexkeypad_xst.prj"
+-top hexkeypad
+-p virtex6
+-ofn "C:\hlocal\SE\Proyecto\Practica2\pcores\hexkeypad_v1_00_a\devl\synthesis\hexkeypad_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib hexkeypad_v1_00_a

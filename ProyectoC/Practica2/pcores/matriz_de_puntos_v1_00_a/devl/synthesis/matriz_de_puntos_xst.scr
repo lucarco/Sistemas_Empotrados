@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\hlocal\SE\Proyecto\Practica2\pcores\matriz_de_puntos_v1_00_a\devl\synthesis\matriz_de_puntos_xst.prj"
+-top matriz_de_puntos
+-p virtex6
+-ofn "C:\hlocal\SE\Proyecto\Practica2\pcores\matriz_de_puntos_v1_00_a\devl\synthesis\matriz_de_puntos_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib matriz_de_puntos_v1_00_a

@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\hlocal\SE\Proyecto\Practica2/drivers/matriz_de_puntos_v1_00_a/data/matriz_de_puntos_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Thu Feb 25 02:44:59 2021 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER matriz_de_puntos
+
+  OPTION supported_peripherals = (matriz_de_puntos);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

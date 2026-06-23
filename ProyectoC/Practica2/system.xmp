@@ -1,0 +1,36 @@
+#Please do not modify this file by hand
+XmpVersion: 14.1
+VerMgmt: 14.1
+IntStyle: default
+Flow: ise
+MHS File: system.mhs
+Architecture: spartan3
+Device: xc3s1000l
+Package: ft256
+SpeedGrade: -4
+UserCmd1: 
+UserCmd1Type: 0
+UserCmd2: 
+UserCmd2Type: 0
+GenSimTB: 0
+SdkExportBmmBit: 1
+SdkExportDir: SDK/SDK_Export
+InsertNoPads: 0
+WarnForEAArch: 1
+HdlLang: VHDL
+SimModel: BEHAVIORAL
+ExternalMemSim: 0
+UcfFile: data/system.ucf
+EnableParTimingError: 1
+ShowLicenseDialog: 1
+LockAddr: xps_bram_if_cntlr_0,C_BASEADDR
+LockAddr: hexkeypad_0,C_BASEADDR
+LockAddr: leds,C_BASEADDR
+LockAddr: switches,C_BASEADDR
+LockAddr: xps_uartlite_0,C_BASEADDR
+LockAddr: infrarrojos_0,C_BASEADDR
+LockAddr: matriz_de_puntos_0,C_BASEADDR
+LockAddr: leds_rgb_0,C_BASEADDR
+Processor: microblaze_0
+ElfImp: 
+ElfSim: 

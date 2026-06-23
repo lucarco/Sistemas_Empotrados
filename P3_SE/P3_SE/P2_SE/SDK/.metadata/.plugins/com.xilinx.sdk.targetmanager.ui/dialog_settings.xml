@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="U:\hlocal\P3_SE\P2_SE\SDK\P2_SE_hw_platform\system.bit" key="P2_SE_hw_platform-bitFile"/>
+	<item value="U:\hlocal\P3_SE\P2_SE\SDK\P2_SE_hw_platform\system_bd.bmm" key="P2_SE_hw_platform-bmmFile"/>
+	<item value="U:\hlocal\P3_SE\P2_SE\SDK\peripheral_tests_0\Debug\peripheral_tests_0.elf" key="P2_SE_hw_platform-microblaze_0-initElf"/>
+</section>

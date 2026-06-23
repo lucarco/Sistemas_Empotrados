@@ -1,0 +1,56 @@
+!SESSION 2023-10-04 09:33:18.662 -----------------------------------------------
+eclipse.buildId=Release 14.1 Build SDK_P.15xf
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-04 09:40:49.350
+!MESSAGE Indexed 'peripheral_tests_0' (3 sources, 26 headers) in 0,49 sec: 1.021 declarations; 1.159 references; 20 unresolved inclusions; 0 syntax errors; 56 unresolved names (2,50%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-04 09:40:49.370
+!MESSAGE Indexed 'peripheral_tests_bsp_0' (0 sources, 8 headers) in 0,01 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+!SESSION 2023-10-04 17:09:58.453 -----------------------------------------------
+eclipse.buildId=Release 14.1 Build SDK_P.15xf
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2023-10-04 17:10:22.502
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2023-10-04 17:10:23.029
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2023-10-04 17:10:23.029
+!MESSAGE Unable to restore perspective: Workspace - C/C++.
+!SUBENTRY 2 org.eclipse.ui 0 0 2023-10-04 17:10:23.029
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2023-10-04 17:10:23.029
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2023-10-04 17:10:23.029
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2023-10-04 17:10:23.029
+!MESSAGE OK

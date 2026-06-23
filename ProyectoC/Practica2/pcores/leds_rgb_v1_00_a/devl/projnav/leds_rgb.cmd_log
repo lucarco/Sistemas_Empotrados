@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/devl/projnav/leds_rgb.xst" -ofn "C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/devl/projnav/leds_rgb.syr" 
+xst -intstyle ise -ifn "C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/devl/projnav/leds_rgb.xst" -ofn "C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/devl/projnav/leds_rgb.syr" 
+xst -intstyle ise -ifn "C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/devl/projnav/leds_rgb.xst" -ofn "C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/devl/projnav/leds_rgb.syr" 
+xst -intstyle ise -ifn "C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/devl/projnav/leds_rgb.xst" -ofn "C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/devl/projnav/leds_rgb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000l-ft256-4 leds_rgb.ngc leds_rgb.ngd  
+map -intstyle ise -p xc3s1000l-ft256-4 -cm area -ir off -pr off -c 100 -o leds_rgb_map.ncd leds_rgb.ngd leds_rgb.pcf 

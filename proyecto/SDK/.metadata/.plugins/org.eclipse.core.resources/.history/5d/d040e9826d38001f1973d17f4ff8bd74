@@ -1,0 +1,168 @@
+/**
+ * Author: Olga Posada Iglesias
+ * */
+
+#ifndef FRASES_COMPUESTAS_H
+#define FRASES_COMPUESTAS_H
+
+#include "keypad.h"
+#include "caracteres.h"
+#include <time.h>
+#include <stdlib.h>
+
+void normalDelay(){
+	int c;
+	for ( c = 1 ; c <= 1500 ; c++ ){}
+}
+
+void slowDelay(){
+	int c,j;
+
+	for ( c = 1 ; c <= 13500 ; c++ ){
+		for ( j = 1 ; j <= 250 ; j++ ){}
+	}
+
+}
+
+void aSecondDelay(){
+	int c,j;
+
+	for ( c = 1 ; c <= 13500 ; c++ ){
+		for ( j = 1 ; j <= 63 ; j++ ){}
+	}
+}
+
+
+void numeroUno(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_U_DIR(1,dir);
+	write_N_DIR(2,dir);
+	write_0_DIR(3,dir);
+	write_diamante_DIR(4,dir);
+	write_1_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroDos(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_D_DIR(1,dir);
+	write_O_DIR(2,dir);
+	write_S_DIR(3,dir);
+	write_diamante_DIR(4,dir);
+	write_2_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroTres(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_T_DIR(1,dir);
+	write_R_DIR(2,dir);
+	write_E_DIR(3,dir);
+	write_S_DIR(4,dir);
+	write_diamante_DIR(5,dir);
+	write_3_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroCuatro(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_C_DIR(1,dir);
+	write_U_DIR(2,dir);
+	write_A_DIR(3,dir);
+	write_T_DIR(4,dir);
+	write_R_DIR(5,dir);
+	write_O_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+	write_4_DIR(8,dir);
+}
+
+void numeroCinco(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_C_DIR(1,dir);
+	write_I_DIR(2,dir);
+	write_N_DIR(3,dir);
+	write_C_DIR(4,dir);
+	write_O_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_5_DIR(7,dir);
+}
+
+void numeroSeis(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_S_DIR(1,dir);
+	write_E_DIR(2,dir);
+	write_I_DIR(3,dir);
+	write_S_DIR(4,dir);
+	write_diamante_DIR(5,dir);
+	write_6_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroSiete(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_S_DIR(1,dir);
+	write_I_DIR(2,dir);
+	write_E_DIR(3,dir);
+	write_T_DIR(4,dir);
+	write_E_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_7_DIR(7,dir);
+}
+
+void numeroOcho(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_O_DIR(1,dir);
+	write_C_DIR(2,dir);
+	write_H_DIR(3,dir);
+	write_O_DIR(4,dir);
+	write_diamante_DIR(5,dir);
+	write_8_DIR(6,dir);
+	write_diamante_DIR(7,dir);
+}
+
+void numeroNueve(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_N_DIR(1,dir);
+	write_U_DIR(2,dir);
+	write_E_DIR(3,dir);
+	write_V_DIR(4,dir);
+	write_E_DIR(5,dir);
+	write_diamante_DIR(6,dir);
+	write_9_DIR(7,dir);
+}
+
+void numeroArcoiris(Xuint8 dir){
+	write_smile_DIR(0,dir);
+	write_R_DIR(1,dir);
+	write_A_DIR(2,dir);
+	write_I_DIR(3,dir);
+	write_N_DIR(4,dir);
+	write_B_DIR(5,dir);
+	write_O_DIR(6,dir);
+	write_W_DIR(7,dir);
+	write_smile_DIR(8,dir);
+}
+
+void numeroNumeros(Xuint8 dir){
+	write_diamante_DIR(0,dir);
+	write_N_DIR(1,dir);
+	write_U_DIR(2,dir);
+	write_M_DIR(3,dir);
+	write_E_DIR(4,dir);
+	write_R_DIR(5,dir);
+	write_O_DIR(6,dir);
+	write_S_DIR(7,dir);
+	write_diamante_DIR(8,dir);
+}
+
+
+void startGame(){
+
+	BANNER_inicializa();
+	numeroNumeros(TURN_QUIET);
+
+}
+
+#endif

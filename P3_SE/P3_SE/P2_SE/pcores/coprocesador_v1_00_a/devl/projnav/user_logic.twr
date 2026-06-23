@@ -1,0 +1,299 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe
+-intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml user_logic.twx user_logic.ncd -o
+user_logic.twr user_logic.pcf
+
+Design file:              user_logic.ncd
+Physical constraint file: user_logic.pcf
+Device,package,speed:     xc3s1000,ft256,-5 (PRODUCTION 1.39 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Bus2IP_Clk
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+Bus2IP_BE<0>   |    5.157(R)|   -1.534(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_BE<1>   |    5.472(R)|   -1.517(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_BE<2>   |    4.805(R)|   -1.297(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_BE<3>   |    5.703(R)|   -1.769(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<0> |    3.061(R)|   -0.496(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<1> |    3.735(R)|   -0.710(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<2> |    2.896(R)|   -0.867(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<3> |    1.966(R)|    0.312(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<4> |    3.092(R)|   -0.725(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<5> |    1.612(R)|    0.058(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<6> |    2.174(R)|   -0.533(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<7> |    2.622(R)|   -0.650(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<8> |    2.021(R)|    0.120(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<9> |    4.724(R)|   -1.333(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<10>|    3.564(R)|   -0.735(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<11>|    1.631(R)|    0.152(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<12>|    2.988(R)|   -0.965(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<13>|    2.624(R)|   -0.412(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<14>|    2.321(R)|   -0.362(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<15>|    2.361(R)|    0.047(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<16>|    1.724(R)|    0.144(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<17>|    2.617(R)|   -0.091(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<18>|    2.857(R)|   -1.233(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<19>|    2.146(R)|   -0.243(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<20>|    2.372(R)|   -0.102(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<21>|    2.342(R)|   -0.085(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<22>|    1.954(R)|    0.034(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<23>|    2.482(R)|   -0.589(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<24>|    1.466(R)|   -0.178(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<25>|    1.704(R)|   -0.139(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<26>|    2.128(R)|   -0.221(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<27>|    2.350(R)|   -0.749(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<28>|    2.235(R)|   -0.527(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<29>|    2.093(R)|   -0.225(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<30>|    1.840(R)|    0.005(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Data<31>|    3.278(R)|   -0.930(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_Reset   |    3.731(R)|   -1.314(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_WrCE<0> |    7.428(R)|   -2.422(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_WrCE<1> |    6.445(R)|   -1.599(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_WrCE<2> |    6.348(R)|   -1.538(R)|Bus2IP_Clk_BUFGP  |   0.000|
+Bus2IP_WrCE<3> |    6.443(R)|   -1.634(R)|Bus2IP_Clk_BUFGP  |   0.000|
+---------------+------------+------------+------------------+--------+
+
+Clock Bus2IP_Clk to Pad
+---------------+------------+------------------+--------+
+               | clk (edge) |                  | Clock  |
+Destination    |   to PAD   |Internal Clock(s) | Phase  |
+---------------+------------+------------------+--------+
+IP2Bus_Data<0> |   13.837(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<1> |   12.654(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<2> |   13.641(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<3> |   12.934(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<4> |   12.274(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<5> |   12.754(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<6> |   12.029(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<7> |   11.912(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<8> |   12.241(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<9> |   12.645(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<10>|   12.906(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<11>|   12.758(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<12>|   14.074(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<13>|   12.656(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<14>|   12.149(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<15>|   12.948(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<16>|   12.233(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<17>|   12.822(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<18>|   12.554(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<19>|   12.952(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<20>|   12.445(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<21>|   12.439(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<22>|   12.930(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<23>|   13.111(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<24>|   11.904(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<25>|   11.780(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<26>|   11.736(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<27>|   12.302(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<28>|   12.192(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<29>|   13.993(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<30>|   12.990(R)|Bus2IP_Clk_BUFGP  |   0.000|
+IP2Bus_Data<31>|   12.873(R)|Bus2IP_Clk_BUFGP  |   0.000|
+---------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Bus2IP_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Bus2IP_Clk     |    4.722|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Bus2IP_RdCE<0> |IP2Bus_Data<0> |   14.171|
+Bus2IP_RdCE<0> |IP2Bus_Data<1> |   13.199|
+Bus2IP_RdCE<0> |IP2Bus_Data<2> |   14.143|
+Bus2IP_RdCE<0> |IP2Bus_Data<3> |   13.829|
+Bus2IP_RdCE<0> |IP2Bus_Data<4> |   13.252|
+Bus2IP_RdCE<0> |IP2Bus_Data<5> |   14.042|
+Bus2IP_RdCE<0> |IP2Bus_Data<6> |   12.965|
+Bus2IP_RdCE<0> |IP2Bus_Data<7> |   12.675|
+Bus2IP_RdCE<0> |IP2Bus_Data<8> |   12.587|
+Bus2IP_RdCE<0> |IP2Bus_Data<9> |   12.419|
+Bus2IP_RdCE<0> |IP2Bus_Data<10>|   12.891|
+Bus2IP_RdCE<0> |IP2Bus_Data<11>|   13.196|
+Bus2IP_RdCE<0> |IP2Bus_Data<12>|   13.673|
+Bus2IP_RdCE<0> |IP2Bus_Data<13>|   13.185|
+Bus2IP_RdCE<0> |IP2Bus_Data<14>|   13.151|
+Bus2IP_RdCE<0> |IP2Bus_Data<15>|   14.080|
+Bus2IP_RdCE<0> |IP2Bus_Data<16>|   13.272|
+Bus2IP_RdCE<0> |IP2Bus_Data<17>|   13.271|
+Bus2IP_RdCE<0> |IP2Bus_Data<18>|   13.406|
+Bus2IP_RdCE<0> |IP2Bus_Data<19>|   12.996|
+Bus2IP_RdCE<0> |IP2Bus_Data<20>|   13.271|
+Bus2IP_RdCE<0> |IP2Bus_Data<21>|   14.158|
+Bus2IP_RdCE<0> |IP2Bus_Data<22>|   13.351|
+Bus2IP_RdCE<0> |IP2Bus_Data<23>|   13.346|
+Bus2IP_RdCE<0> |IP2Bus_Data<24>|   12.666|
+Bus2IP_RdCE<0> |IP2Bus_Data<25>|   13.492|
+Bus2IP_RdCE<0> |IP2Bus_Data<26>|   13.346|
+Bus2IP_RdCE<0> |IP2Bus_Data<27>|   13.783|
+Bus2IP_RdCE<0> |IP2Bus_Data<28>|   13.491|
+Bus2IP_RdCE<0> |IP2Bus_Data<29>|   14.586|
+Bus2IP_RdCE<0> |IP2Bus_Data<30>|   13.330|
+Bus2IP_RdCE<0> |IP2Bus_Data<31>|   13.478|
+Bus2IP_RdCE<0> |IP2Bus_RdAck   |   11.870|
+Bus2IP_RdCE<1> |IP2Bus_Data<0> |   14.758|
+Bus2IP_RdCE<1> |IP2Bus_Data<1> |   13.938|
+Bus2IP_RdCE<1> |IP2Bus_Data<2> |   15.049|
+Bus2IP_RdCE<1> |IP2Bus_Data<3> |   15.002|
+Bus2IP_RdCE<1> |IP2Bus_Data<4> |   13.866|
+Bus2IP_RdCE<1> |IP2Bus_Data<5> |   14.656|
+Bus2IP_RdCE<1> |IP2Bus_Data<6> |   13.579|
+Bus2IP_RdCE<1> |IP2Bus_Data<7> |   13.289|
+Bus2IP_RdCE<1> |IP2Bus_Data<8> |   13.201|
+Bus2IP_RdCE<1> |IP2Bus_Data<9> |   13.033|
+Bus2IP_RdCE<1> |IP2Bus_Data<10>|   13.505|
+Bus2IP_RdCE<1> |IP2Bus_Data<11>|   13.810|
+Bus2IP_RdCE<1> |IP2Bus_Data<12>|   14.287|
+Bus2IP_RdCE<1> |IP2Bus_Data<13>|   13.799|
+Bus2IP_RdCE<1> |IP2Bus_Data<14>|   13.765|
+Bus2IP_RdCE<1> |IP2Bus_Data<15>|   13.917|
+Bus2IP_RdCE<1> |IP2Bus_Data<16>|   14.060|
+Bus2IP_RdCE<1> |IP2Bus_Data<17>|   13.885|
+Bus2IP_RdCE<1> |IP2Bus_Data<18>|   14.265|
+Bus2IP_RdCE<1> |IP2Bus_Data<19>|   13.462|
+Bus2IP_RdCE<1> |IP2Bus_Data<20>|   13.885|
+Bus2IP_RdCE<1> |IP2Bus_Data<21>|   14.271|
+Bus2IP_RdCE<1> |IP2Bus_Data<22>|   13.965|
+Bus2IP_RdCE<1> |IP2Bus_Data<23>|   14.101|
+Bus2IP_RdCE<1> |IP2Bus_Data<24>|   13.088|
+Bus2IP_RdCE<1> |IP2Bus_Data<25>|   13.711|
+Bus2IP_RdCE<1> |IP2Bus_Data<26>|   13.738|
+Bus2IP_RdCE<1> |IP2Bus_Data<27>|   14.167|
+Bus2IP_RdCE<1> |IP2Bus_Data<28>|   14.173|
+Bus2IP_RdCE<1> |IP2Bus_Data<29>|   15.487|
+Bus2IP_RdCE<1> |IP2Bus_Data<30>|   13.977|
+Bus2IP_RdCE<1> |IP2Bus_Data<31>|   13.884|
+Bus2IP_RdCE<1> |IP2Bus_RdAck   |   13.030|
+Bus2IP_RdCE<2> |IP2Bus_Data<0> |   11.775|
+Bus2IP_RdCE<2> |IP2Bus_Data<1> |   10.618|
+Bus2IP_RdCE<2> |IP2Bus_Data<2> |   11.325|
+Bus2IP_RdCE<2> |IP2Bus_Data<3> |   11.757|
+Bus2IP_RdCE<2> |IP2Bus_Data<4> |   10.867|
+Bus2IP_RdCE<2> |IP2Bus_Data<5> |   11.776|
+Bus2IP_RdCE<2> |IP2Bus_Data<6> |   11.044|
+Bus2IP_RdCE<2> |IP2Bus_Data<7> |   11.576|
+Bus2IP_RdCE<2> |IP2Bus_Data<8> |   11.325|
+Bus2IP_RdCE<2> |IP2Bus_Data<9> |   11.844|
+Bus2IP_RdCE<2> |IP2Bus_Data<10>|   11.517|
+Bus2IP_RdCE<2> |IP2Bus_Data<11>|   11.934|
+Bus2IP_RdCE<2> |IP2Bus_Data<12>|   11.626|
+Bus2IP_RdCE<2> |IP2Bus_Data<13>|   11.057|
+Bus2IP_RdCE<2> |IP2Bus_Data<14>|   10.811|
+Bus2IP_RdCE<2> |IP2Bus_Data<15>|   12.393|
+Bus2IP_RdCE<2> |IP2Bus_Data<16>|   11.350|
+Bus2IP_RdCE<2> |IP2Bus_Data<17>|   11.674|
+Bus2IP_RdCE<2> |IP2Bus_Data<18>|   11.325|
+Bus2IP_RdCE<2> |IP2Bus_Data<19>|   12.540|
+Bus2IP_RdCE<2> |IP2Bus_Data<20>|   11.674|
+Bus2IP_RdCE<2> |IP2Bus_Data<21>|   11.695|
+Bus2IP_RdCE<2> |IP2Bus_Data<22>|   11.225|
+Bus2IP_RdCE<2> |IP2Bus_Data<23>|   11.858|
+Bus2IP_RdCE<2> |IP2Bus_Data<24>|   11.899|
+Bus2IP_RdCE<2> |IP2Bus_Data<25>|   11.765|
+Bus2IP_RdCE<2> |IP2Bus_Data<26>|   12.018|
+Bus2IP_RdCE<2> |IP2Bus_Data<27>|   12.254|
+Bus2IP_RdCE<2> |IP2Bus_Data<28>|   11.039|
+Bus2IP_RdCE<2> |IP2Bus_Data<29>|   12.824|
+Bus2IP_RdCE<2> |IP2Bus_Data<30>|   12.105|
+Bus2IP_RdCE<2> |IP2Bus_Data<31>|   12.455|
+Bus2IP_RdCE<2> |IP2Bus_RdAck   |   11.872|
+Bus2IP_RdCE<3> |IP2Bus_Data<0> |   12.051|
+Bus2IP_RdCE<3> |IP2Bus_Data<1> |   11.162|
+Bus2IP_RdCE<3> |IP2Bus_Data<2> |   13.157|
+Bus2IP_RdCE<3> |IP2Bus_Data<3> |   12.156|
+Bus2IP_RdCE<3> |IP2Bus_Data<4> |   11.412|
+Bus2IP_RdCE<3> |IP2Bus_Data<5> |   12.677|
+Bus2IP_RdCE<3> |IP2Bus_Data<6> |   11.872|
+Bus2IP_RdCE<3> |IP2Bus_Data<7> |   12.245|
+Bus2IP_RdCE<3> |IP2Bus_Data<8> |   11.616|
+Bus2IP_RdCE<3> |IP2Bus_Data<9> |   11.337|
+Bus2IP_RdCE<3> |IP2Bus_Data<10>|   12.083|
+Bus2IP_RdCE<3> |IP2Bus_Data<11>|   12.247|
+Bus2IP_RdCE<3> |IP2Bus_Data<12>|   12.739|
+Bus2IP_RdCE<3> |IP2Bus_Data<13>|   12.283|
+Bus2IP_RdCE<3> |IP2Bus_Data<14>|   12.476|
+Bus2IP_RdCE<3> |IP2Bus_Data<15>|   11.880|
+Bus2IP_RdCE<3> |IP2Bus_Data<16>|   12.744|
+Bus2IP_RdCE<3> |IP2Bus_Data<17>|   11.784|
+Bus2IP_RdCE<3> |IP2Bus_Data<18>|   11.990|
+Bus2IP_RdCE<3> |IP2Bus_Data<19>|   12.845|
+Bus2IP_RdCE<3> |IP2Bus_Data<20>|   11.784|
+Bus2IP_RdCE<3> |IP2Bus_Data<21>|   12.478|
+Bus2IP_RdCE<3> |IP2Bus_Data<22>|   11.627|
+Bus2IP_RdCE<3> |IP2Bus_Data<23>|   12.219|
+Bus2IP_RdCE<3> |IP2Bus_Data<24>|   11.392|
+Bus2IP_RdCE<3> |IP2Bus_Data<25>|   12.306|
+Bus2IP_RdCE<3> |IP2Bus_Data<26>|   11.246|
+Bus2IP_RdCE<3> |IP2Bus_Data<27>|   12.728|
+Bus2IP_RdCE<3> |IP2Bus_Data<28>|   11.814|
+Bus2IP_RdCE<3> |IP2Bus_Data<29>|   12.311|
+Bus2IP_RdCE<3> |IP2Bus_Data<30>|   11.806|
+Bus2IP_RdCE<3> |IP2Bus_Data<31>|   12.437|
+Bus2IP_RdCE<3> |IP2Bus_RdAck   |   11.417|
+Bus2IP_WrCE<0> |IP2Bus_WrAck   |    7.353|
+Bus2IP_WrCE<1> |IP2Bus_WrAck   |    6.852|
+Bus2IP_WrCE<2> |IP2Bus_WrAck   |    6.701|
+Bus2IP_WrCE<3> |IP2Bus_WrAck   |    7.131|
+switches<0>    |leds<0>        |    5.495|
+switches<1>    |leds<1>        |    5.470|
+switches<2>    |leds<2>        |    5.475|
+switches<3>    |leds<3>        |    5.470|
+switches<4>    |leds<4>        |    5.486|
+switches<5>    |leds<5>        |    8.145|
+switches<6>    |leds<6>        |    6.121|
+switches<7>    |leds<7>        |    5.475|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 18 17:25:53 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4503 MB
+
+
+

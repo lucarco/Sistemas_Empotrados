@@ -1,0 +1,4 @@
+AR user_logic imp C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl01 1614222572
+AR leds_rgb imp C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/leds_rgb.vhd sub00/vhpl03 1614222574
+EN user_logic NULL C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl00 1614222571
+EN leds_rgb NULL C:/hlocal/SE/Proyecto/Practica2/pcores/leds_rgb_v1_00_a/hdl/vhdl/leds_rgb.vhd sub00/vhpl02 1614222573

@@ -1,0 +1,10 @@
+EN sintesis_cerrojo NULL U:/hlocal/Gala/P1/sintesis_cerrojo.vhd sub00/vhpl08 1695662031
+AR debouncer debouncerarch U:/hlocal/Gala/P1/debouncer.vhd sub00/vhpl03 1695662026
+AR registro behavioral U:/hlocal/Gala/P1/registro.vhd sub00/vhpl01 1695662024
+AR cerrojo behavioral U:/hlocal/Gala/P1/cerrojo.vhd sub00/vhpl05 1695662028
+AR conv_7seg behavioral U:/hlocal/Gala/P1/conv_7seg.vhd sub00/vhpl07 1695662030
+EN conv_7seg NULL U:/hlocal/Gala/P1/conv_7seg.vhd sub00/vhpl06 1695662029
+EN debouncer NULL U:/hlocal/Gala/P1/debouncer.vhd sub00/vhpl02 1695662025
+AR sintesis_cerrojo cerrojoarch U:/hlocal/Gala/P1/sintesis_cerrojo.vhd sub00/vhpl09 1695662032
+EN cerrojo NULL U:/hlocal/Gala/P1/cerrojo.vhd sub00/vhpl04 1695662027
+EN registro NULL U:/hlocal/Gala/P1/registro.vhd sub00/vhpl00 1695662023

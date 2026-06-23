@@ -1,0 +1,24 @@
+V3 11
+FL C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/hdl/vhdl/infrarrojos.vhd 2021/02/23.02:25:47 P.15xf
+EN infrarrojos_v1_00_a/infrarrojos 1614096997 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/hdl/vhdl/infrarrojos.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1614096976 \
+      PB proc_common_v3_00_a/ipif_pkg 1614096988 LB plbv46_slave_single_v1_01_a \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1614096993 \
+      LB infrarrojos_v1_00_a EN infrarrojos_v1_00_a/user_logic 1614096995
+AR infrarrojos_v1_00_a/infrarrojos/IMP 1614096998 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/hdl/vhdl/infrarrojos.vhd \
+      EN infrarrojos_v1_00_a/infrarrojos 1614096997 \
+      CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
+      CP infrarrojos_v1_00_a/user_logic
+FL C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/hdl/vhdl/user_logic.vhd 2021/02/23.17:16:08 P.15xf
+EN infrarrojos_v1_00_a/user_logic 1614096995 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1614096976
+AR infrarrojos_v1_00_a/user_logic/IMP 1614096996 \
+      FL C:/hlocal/SE/Proyecto/Practica2/pcores/infrarrojos_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN infrarrojos_v1_00_a/user_logic 1614096995

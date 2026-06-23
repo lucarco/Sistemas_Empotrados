@@ -1,0 +1,25 @@
+V3 11
+FL U:/hlocal/P2_SE/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd 2023/10/18.16:32:29 P.15xf
+EN coprocesador_v1_00_a/coprocesador 1697642711 \
+      FL U:/hlocal/P2_SE/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      LB plbv46_slave_single_v1_01_a LB coprocesador_v1_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1697642733 \
+      PB proc_common_v3_00_a/ipif_pkg 1697642702 \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1697642707 \
+      EN coprocesador_v1_00_a/user_logic 1697642734
+AR coprocesador_v1_00_a/coprocesador/IMP 1697642712 \
+      FL U:/hlocal/P2_SE/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd \
+      EN coprocesador_v1_00_a/coprocesador 1697642711 \
+      CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
+      CP coprocesador_v1_00_a/user_logic
+FL U:/hlocal/P2_SE/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd 2023/10/18.17:24:16 P.15xf
+EN coprocesador_v1_00_a/user_logic 1697642734 \
+      FL U:/hlocal/P2_SE/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1697642733
+AR coprocesador_v1_00_a/user_logic/IMP 1697642735 \
+      FL U:/hlocal/P2_SE/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN coprocesador_v1_00_a/user_logic 1697642734

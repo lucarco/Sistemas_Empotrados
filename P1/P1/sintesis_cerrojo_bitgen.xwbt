@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=U:\hlocal\Gala\P1\sintesis_cerrojo.ncd
+OUTFILE=U:\hlocal\Gala\P1\sintesis_cerrojo.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=U:\hlocal\Gala\P1
+LICENSE=ISE
+USER_INFO=210699396_1777489394_210552810_807

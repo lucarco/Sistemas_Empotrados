@@ -1,0 +1,149 @@
+/*
+ *
+ * Autor: Olga Posada Iglesias
+ * Asignatura: Sistemas Empotrados
+ */
+
+/*
+ * 
+ *
+ * This file is a generated sample test application.
+ *
+ * This application is intended to test and/or illustrate some 
+ * functionality of your system.  The contents of this file may
+ * vary depending on the IP in your system and may use existing
+ * IP driver functions.  These drivers will be generated in your
+ * SDK application project when you run the "Generate Libraries" menu item.
+ *
+ */
+
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xbasic_types.h"
+#include "xbram.h"
+#include "bram_header.h"
+#include "banner.h"
+#include "rellenar.h"
+#include "keypad.h"
+#include "caracteres.h"
+#include "movimientosled.h"
+
+Xuint8 cartaElegida;
+
+Xuint32 getNumber(){
+
+	Xuint32 value,dato,oldValue;
+	value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR,0);
+	dato = (value>>28) & 0xF;
+	KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR,0,value);
+
+	while(dato != 0x1 && dato != 0x2 && dato != 0x3 && dato != 0x4 && dato != 0x5 && dato != 0x6 && dato != 0x7 && dato != 0x8 && dato != 0x9 && dato != 0xA && dato != 0xB && dato != 0xC && dato != 0xD && dato != 0xE && dato != 0xF && dato != 0xC){
+	   if(value != oldValue){
+		   dato = (value>>28) & 0xF;
+		   xil_printf("se ha leido %01x \n\r",dato);
+		   oldValue = value;
+	   }
+	   value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR,0);
+	   KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR,0,0);
+	}
+	return dato;
+}
+
+
+int main() 
+{
+
+	Xil_ICacheEnable();
+	Xil_DCacheEnable();
+	startGame();
+
+	while(cartaElegida!= 0xC){
+		cartaElegida = getNumber();
+
+		switch(cartaElegida){
+
+		case 0x1:
+			numeroUno(TURN_LEFT);
+			break;
+
+		case 0x2:
+			numeroDos(TURN_LEFT);
+			break;
+
+		case 0x3:
+			numeroTres(TURN_LEFT);
+			break;
+
+		case 0x4:
+			numeroCuatro(TURN_LEFT);
+			break;
+
+		case 0x5:
+			numeroCinco(TURN_LEFT);
+			break;
+
+		case 0x6:
+			numeroSeis(TURN_LEFT);
+			break;
+
+		case 0x7:
+			numeroSiete(TURN_LEFT);
+			break;
+
+		case 0x8:
+			numeroOcho(TURN_LEFT);
+			break;
+
+		case 0x9:
+			numeroNueve(TURN_LEFT);
+			break;
+
+		case 0xA:
+			numeroA(TURN_LEFT);
+			break;
+
+		case 0xB:
+			numeroB(TURN_LEFT);
+			break;
+
+		case 0xC:
+			numeroC(TURN_LEFT);
+			break;
+
+		case 0xD:
+			numeroD(TURN_LEFT);
+			break;
+
+		case 0xE:
+			numeroE(TURN_LEFT);
+			break;
+
+		case 0xF:
+			numeroF(TURN_LEFT);
+			break;
+
+		case 'e':
+
+		break;
+
+		case 'f':
+
+		break;
+
+		}
+	}
+
+
+	numeroArcoiris(TURN_RIGHT);
+	for (i = 0; i < 5; i++)
+	   arcoiris(LED_0);
+
+	Xil_DCacheDisable();
+	Xil_ICacheDisable();
+
+   return 0;
+}
+

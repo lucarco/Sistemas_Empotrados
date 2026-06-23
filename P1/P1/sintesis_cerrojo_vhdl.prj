@@ -1,0 +1,5 @@
+vhdl work "U:\hlocal\Gala\P1\registro.vhd"
+vhdl work "U:\hlocal\Gala\P1\debouncer.vhd"
+vhdl work "U:\hlocal\Gala\P1\conv_7seg.vhd"
+vhdl work "U:\hlocal\Gala\P1\cerrojo.vhd"
+vhdl work "U:\hlocal\Gala\P1\sintesis_cerrojo.vhd"
