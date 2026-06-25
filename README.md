@@ -1,6 +1,6 @@
 Sistemas Empotrados:
 
-Diseño de Sistema Embebido en FPGA | Xilinx Vivado & VHDL
+**Diseño de Sistema Embebido en FPGA | Xilinx Vivado & VHDL**
 
 Prácticas y proyecto final utilizando Vivado(VHDL) y Vitis(C)
 para programar una placa Basys3 y sus diferentes periféricos.
